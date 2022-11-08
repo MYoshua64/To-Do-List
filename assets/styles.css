@@ -1,0 +1,116 @@
+body {
+  background-image: url(images/tile.jpg);
+}
+
+h1 {
+  font-size: 4.5rem;
+  width: auto;
+  font-weight: bold;
+}
+
+textarea {
+  resize: none;
+  scroll-snap-align: 0.5rem;
+}
+
+#error-message {
+  animation: fadeIn 1s;
+  display: none;
+  background-color: red;
+  margin-top: 20px;
+}
+
+.wrong-input{
+  border-radius: 5px;
+  border-width: 2px;
+  border-color: red;
+  background: rgba(0, 0, 0, 0);
+}
+
+#task-insert-area {
+  background-image: url(images/formbg.jpg);
+  display: inline-block;
+  padding: 10px;
+  text-align: left;
+  background-position-x: 85px;
+}
+
+#task-details {
+  overflow-y: auto;
+  line-height: 120%;
+}
+
+#task-content-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content-line {
+  margin-bottom: 1.5%;
+}
+
+.label-div {
+  display: inline-block;
+  font-size: 2.5rem;
+  width: 135px;
+  margin-right: 25px;
+}
+
+.custom-text {
+  font-family: "Shalimar", cursive;
+  font-weight: bold;
+  font-size: 1.9rem;
+}
+
+.custom-text-sm {
+  font-size: 1rem;
+}
+
+.no-bg {
+  background: rgba(0, 0, 0, 0);
+  border-width: 0;
+}
+
+.center-content {
+  text-align: center;
+}
+
+button {
+  margin: 20px;
+}
+
+.task-card {
+  background-image: url(images/notebg.png);
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  padding: 20px;
+  animation: fadeIn 1s;
+  width: 217.5px;
+  height: 285px;
+}
+
+.task-content {
+  width: 90%;
+  height: 30%;
+  margin-top: 5px;
+  overflow-y: auto;
+}
+
+.bi {
+  visibility: hidden;
+}
+
+.task-card:hover .bi {
+  visibility: visible;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100;
+  }
+}

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To-Do List</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="assets/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Shalimar&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="custom-text">
+    <div class="center-content">
+      <h1>My Task Board</h1>
+      <div>
+        <div id="task-insert-area">
+          <form id="task-form">
+            <div id="task-content-div" class="content-line">
+              <div class="label-div">
+                <label for="taskContent">Task Content</label>
+              </div>
+              <textarea
+                type="text"
+                name="taskContent"
+                class="custom-text no-bg input-field"
+                id="task-details"
+                cols="50"
+                rows="3"
+              ></textarea>
+            </div>
+            <div class="content-line">
+              <div class="label-div">
+                <label for="taskDate">Due Date</label>
+              </div>
+              <input type="date" name="taskDate" class="custom-text no-bg input-field" />
+            </div>
+            <div class="content-line">
+              <div class="label-div">
+                <label for="taskTime">Due Time</label>
+              </div>
+              <input type="time" name="taskTime" class="custom-text no-bg input-field" />
+            </div>
+          </form>
+        </div>
+      </div>
+      <p id="error-message">
+        The highlighted field(s) were not inserted correctly!
+      </p>
+      <div>
+        <button class="custom-text btn btn-success" id="btn-create">Create Task</button>
+        <button class="custom-text btn btn-danger" id="btn-reset">Reset Form</button>
+      </div>
+    </div>
+    <hr class="border border-primary border-3 opacity-75" />
+    <div class="task-list"></div>
+    <script src="index.js"></script>
+  </body>
+</html>
